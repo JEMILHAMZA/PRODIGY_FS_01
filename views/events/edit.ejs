@@ -1,0 +1,33 @@
+<!-- events/edit.ejs -->
+
+<%- include('../layouts/header') %>
+<link rel="stylesheet" href="/css/edit.css">
+<div class="edit-form-container">
+  <div class="back-button-container">
+    <a href="/events" class="back-button">
+      <i class="fas fa-arrow-left"></i> Back to Events
+    </a>
+  </div>
+  <h2 class="edit-form-heading">Edit Event</h2>
+  <form action="/events/edit/<%= event._id %>" method="POST" class="edit-form">
+    <div class="mb-4">
+      <label for="title">Title</label>
+      <input type="text" name="title" value="<%= event.title %>" required>
+    </div>
+    <div class="mb-4">
+      <label for="description">Description</label>
+      <textarea name="description" required><%= event.description %></textarea>
+    </div>
+    <div class="mb-4">
+      <label for="date">Date</label>
+      <input type="date" name="date" value="<%= event.date.toISOString().substring(0, 10) %>" required>
+    </div>
+   
+    <button type="submit">Update Event</button>
+      
+    
+    
+  </form>
+</div>
+<%- include('../layouts/footer') %>
+

@@ -1,0 +1,200 @@
+/* css/edit.css */
+
+/* Container for the edit form */
+
+.edit-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* Heading style */
+  .edit-form-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form styles */
+  .edit-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    padding: 2rem;
+  }
+  
+  /* Label styles */
+  .edit-form label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Input and textarea styles */
+  .edit-form input,
+  .edit-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .edit-form input:focus,
+  .edit-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(38, 143, 255, 0.25);
+  }
+  
+  /* Submit button styles */
+  .edit-form button {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .edit-form button:hover {
+    background: linear-gradient(45deg, #0056b3, #003d80);
+    transform: translateY(-2px);
+  }
+  
+
+
+
+  
+
+/* Back Button Container */
+.back-button-container {
+    margin-bottom: 1.5rem; /* Space between back button and form */
+  }
+  
+  /* Back Button Styles */
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #007bff; /* Primary color for visibility */
+    color: #ffffff; /* White text for contrast */
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .back-button i {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+    transform: translateY(-2px);
+  }
+  
+
+
+
+  /* edit.css */
+/* Container for the edit form */
+.edit-form-container {
+  max-width: 800px; /* Maximum width of the container */
+  width: 100%; /* Ensure it takes full width available within its parent */
+  margin: 0 auto; /* Center the container */
+  padding: 2rem;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Form styles */
+.edit-form {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  width: 100%; /* Ensure the form takes full width of its container */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .edit-form-container {
+      padding: 1rem; /* Adjust padding for smaller screens */
+  }
+  
+  .edit-form {
+      padding: 1rem; /* Adjust form padding for smaller screens */
+  }
+}
+
+/* Responsive styling for inputs and textareas */
+.edit-form input,
+.edit-form textarea {
+  width: 100%;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+
+
+
+
+
+
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+  color: #ffffff;
+  width: 100%; /* Ensure the header covers the full width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  padding: 1rem 0;
+  color: #ffffff;
+  width: 100%; /* Ensure the footer covers the full width */
+  position: absolute; /* Position the footer at the bottom of the page */
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+
+
+
+/* General Body Styles */
+html, body {
+  height: 100%; /* Ensure the body takes up the full height of the viewport */
+  margin: 0; /* Remove default margin */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* Arrange elements in a column */
+}
+
+main {
+  flex: 1; /* Allow the main content to grow and fill available space */
+}
+
+
+/* Resetting margin and padding for main content */
+main {
+  margin: 0;
+  padding: 0;
+}
+

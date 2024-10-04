@@ -1,0 +1,218 @@
+/* css/login.css */
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+
+  
+  .hero-section {
+    position: relative;
+    background: url('../images/hero.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-section {
+    position: relative;
+    background: url('../images/hero.jpg') no-repeat center center;
+    background-size: contain; /* Make sure the entire image is visible */
+    background-attachment: fixed; /* Keep the image fixed while scrolling */
+    height: 100vh; /* Use viewport height for full screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Hide any overflow to prevent scrolling issues */
+  }
+  
+ 
+  
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content {
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .login-card-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .login-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+  }
+  
+  .login-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+    color: #666;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    color: #000; /* Set text color to black or any other visible color */
+    caret-color: #000; /* Set cursor color to match text color */
+    background-color: #fff; /* Set a distinct background color */
+    
+  }
+  
+  .input-field:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+
+
+
+
+
+  
+  .submit-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  
+
+  .register-link {
+    color: #000; /* Ensure the text color is visible on the background */
+    font-size: 14px; /* Adjust the font size if necessary */
+    text-align: center; /* Center the text */
+    margin-top: 10px; /* Add some space above the link */
+  }
+  
+  .register-link a {
+    color: #007bff; /* Set the link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+
+
+ /* Remove gap between hero and footer */
+ .hero-section {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+  /* login.css or main stylesheet */
+
+/* General alert styles */
+.alert {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Error alert */
+.alert-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Success alert */
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+
+
+
+
+

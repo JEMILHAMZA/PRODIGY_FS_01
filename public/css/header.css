@@ -1,0 +1,164 @@
+/* css/header.css */
+
+  /* Footer Styles */
+
+
+
+/* header.css */
+
+/* Header Styles */
+
+
+
+
+
+
+
+  footer {
+    padding: 1rem;
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+
+
+
+
+  /* Header Styles */
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+    color: #ffffff;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-link,
+  .nav-btn {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover,
+  .nav-btn:hover {
+    color: #00bfff;
+  }
+  
+  .nav-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .nav-btn i {
+    font-size: 1rem;
+  }
+  
+  .nav-btn span {
+    margin-left: 0.25rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .nav-link,
+    .nav-btn {
+      font-size: 0.875rem;
+    }
+  }
+
+
+
+
+  .profile-link {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-text {
+    margin-left: 5px; /* Adjust this value to increase or decrease the gap */
+  }
+
+
+
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    padding: 1rem 0;
+    margin-top: 0;
+    color: #ffffff;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+  }
+  
+  .footer .container {
+    text-align: center;
+    font-size: 0.875rem;
+    width: 100%; /* Make sure the container takes the full width */
+  }
+  
+ 
+
+  .footer-content {
+    text-align: center;
+    font-size: 0.875rem;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the text inside the footer */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,405 @@
+/* css/event.css */
+
+.header-container {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+
+
+.event-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.event-card p {
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+/* Flexbox Container for Heading and Button */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+/* Column alignment for mobile screens */
+@media (max-width: 640px) {
+    .flex-col {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .flex-col h2, .flex-col .create-event-btn {
+        text-align: center;
+        width: 100%; /* Make the elements full-width */
+        margin-right: 0; /* Remove right margin on mobile */
+    }
+
+    .flex-col h2 {
+        margin-bottom: 1rem; /* Add margin below the title */
+    }
+}
+
+
+
+
+
+h2 {
+    text-align: center;
+    flex-grow: 1;
+}
+/* Create Event Button */
+.create-event-btn {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 4px;
+}
+
+.create-event-btn i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.create-event-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Container and Card Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+.event-card {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    border-radius: 8px;
+    padding: 1.5rem;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    color: #fff;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* Flexbox Container for Heading and Button */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+/* Column alignment for mobile screens */
+@media (max-width: 640px) {
+    .flex-col {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .flex-col h2, .flex-col .create-event-btn {
+        text-align: center;
+        width: 100%; /* Make the elements full-width */
+        margin-right: 0; /* Remove right margin on mobile */
+    }
+
+    .flex-col h2 {
+        margin-bottom: 1rem; /* Add margin below the title */
+    }
+}
+
+
+
+
+
+h2 {
+    text-align: center;
+    flex-grow: 1;
+}
+
+
+
+
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-gap: 1.5rem;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+    .sm\:grid-cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:grid-cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg\:grid-cols-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+
+
+
+
+
+/* Button Group inside Card */
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Edit Button */
+.btn-edit {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(45deg, #36d1dc, #5b86e5);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-edit i {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+.btn-edit:hover {
+    background: linear-gradient(45deg, #5b86e5, #36d1dc);
+    transform: translateY(-2px);
+}
+
+/* Delete Button */
+.btn-delete {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(45deg, #f857a6, #ff5858);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-delete i {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+.btn-delete:hover {
+    background: linear-gradient(45deg, #ff5858, #f857a6);
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+    .flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .flex h2 {
+        margin-bottom: 1rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .create-event-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+
+
+/* Ensure buttons do not expand on small screens */
+@media (max-width: 640px) {
+    .create-event-btn, .btn-edit, .btn-delete {
+        width: auto; /* Ensure buttons do not stretch to full width */
+        max-width: 300px; /* Optional: Set a max-width to ensure buttons are not too wide */
+    }
+}
+
+
+
+
+/* Flexbox Container for Buttons */
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-direction: row; /* Default to row direction */
+}
+
+
+
+
+
+
+
+
+/* Event Card Title */
+.event-card h3 {
+    font-size: 1.75rem; /* Larger font size for better emphasis */
+    font-weight: 700; /* Bold font weight for prominence */
+    color: #f5f5f5; /* Light color for contrast */
+    margin-bottom: 0.5rem; /* Space below the title */
+    text-transform: uppercase; /* Uppercase for a strong visual effect */
+    letter-spacing: 0.5px; /* Slight spacing between letters */
+}
+
+/* Event Date */
+.event-card .event-date {
+    font-size: 1.2rem; /* Slightly smaller than the title */
+    font-weight: 400; /* Normal weight for less emphasis */
+    color: #cfd8dc; /* Light grey color for subtlety */
+    margin-bottom: 0.75rem; /* Space below the date */
+    font-style: italic; /* Italic style for distinction */
+}
+
+/* Event Description */
+.event-card .event-description {
+    font-size: 1rem; /* Standard font size for readability */
+    font-weight: 300; /* Light font weight for less emphasis */
+    color: #e0e0e0; /* Very light grey for a softer appearance */
+    line-height: 1.6; /* Increased line height for better readability */
+}
+
+/* Responsive Design for Text Styling */
+@media (max-width: 640px) {
+    .event-card h3 {
+        font-size: 1.5rem; /* Slightly smaller font size on mobile */
+    }
+    
+    .event-card .event-date {
+        font-size: 1.1rem; /* Slightly smaller font size on mobile */
+    }
+
+    .event-card .event-description {
+        font-size: 0.9rem; /* Slightly smaller font size on mobile */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Heading Style */
+h2 {
+    font-size: 2.5rem; /* Larger font size for prominence */
+    font-weight: 700; /* Bold font weight for emphasis */
+    color: #333; /* Dark color for high contrast */
+    text-align: center; /* Center alignment for better presentation */
+    margin-bottom: 1.5rem; /* Space below the heading */
+    text-transform: uppercase; /* Uppercase for strong visual impact */
+    letter-spacing: 1px; /* Spacing between letters for added emphasis */
+    font-family: 'Montserrat', sans-serif; /* Modern font for a clean look */
+    position: relative; /* Allows for additional styling such as underlines or decorations */
+}
+
+/* Decorative Underline */
+h2::after {
+    content: "";
+    display: block;
+    width: 50%; /* Width of the underline */
+    height: 3px; /* Thickness of the underline */
+    background-color: #007bff; /* Color of the underline */
+    margin: 0.5rem auto 0; /* Center the underline and add margin on top */
+    border-radius: 2px; /* Rounded corners for the underline */
+}
+
+/* Responsive Design for Heading */
+@media (max-width: 640px) {
+    h2 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+        margin-bottom: 1rem; /* Adjust margin for smaller screens */
+    }
+}

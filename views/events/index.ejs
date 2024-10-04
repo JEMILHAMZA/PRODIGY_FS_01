@@ -1,0 +1,48 @@
+<!-- events/index.ejs -->
+
+<%- include('../layouts/header') %>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<link rel="stylesheet" href="css/event.css">
+
+<!-- Heading and Button Container -->
+<div class="flex mb-6">
+  <h2 class="text-2xl font-bold">Upcoming Events</h2>
+  <% if (user.role === 'admin') { %>
+    <a href="/events/new" class="create-event-btn">
+      <i class="fas fa-plus-circle"></i>
+      Create New Event
+    </a>
+  <% } %>
+</div>
+
+<!-- Event Cards Container -->
+<div class="container mx-auto p-4">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <% events.forEach(event => { %>
+        <div class="event-card">
+            <h3><%= event.title %></h3>
+            <p class="event-date"><%= event.date.toDateString() %></p>
+            <p class="event-description"><%= event.description %></p>
+            <% if (user.role === 'admin') { %>
+              <div class="button-group">
+                <a href="/events/edit/<%= event._id %>" class="btn-edit">
+                  <i class="fas fa-edit"></i>
+                  Edit
+                </a>
+                <form action="/events/delete/<%= event._id %>" method="POST">
+                  <button type="submit" class="btn-delete">
+                    <i class="fas fa-trash-alt"></i>
+                    Delete
+                  </button>
+                </form>
+              </div>
+            <% } %>
+        </div>
+        
+    <% }); %>
+  </div>
+</div>
+
+<%- include('../layouts/footer') %>

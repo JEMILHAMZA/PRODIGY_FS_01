@@ -1,0 +1,29 @@
+<%- include('../layouts/header') %>
+<link rel="stylesheet" href="/css/new.css"> <!-- Include the new CSS file -->
+
+<div class="new-form-container">
+  <div class="back-button-container">
+    <a href="/events" class="back-button">
+      <i class="fas fa-arrow-left"></i> Back to Events
+    </a>
+  </div>
+  <h2 class="new-form-heading">Create New Event</h2>
+  <form action="/events" method="POST" class="new-form">
+    <div class="mb-4">
+      <label for="title" class="block">Title</label>
+      <input type="text" name="title" required>
+    </div>
+    <div class="mb-4">
+      <label for="description" class="block">Description</label>
+      <textarea name="description" required></textarea>
+    </div>
+    <div class="mb-4">
+      <label for="date" class="block">Date</label>
+      <input type="date" name="date" required>
+    </div>
+    <button type="submit">Create Event</button>
+  </form>
+</div>
+
+<%- include('../layouts/footer') %>
+

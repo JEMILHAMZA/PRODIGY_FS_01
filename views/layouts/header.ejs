@@ -1,0 +1,47 @@
+<!-- layouts/header.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecureZone</title>
+  <link href="/css/header.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="logo">SecureZone</a>
+      <ul class="nav-links">
+        <% if (user) { %>
+          <li>
+            <a href="/profile" class="nav-link profile-link">
+              <i class="fas fa-user"></i>
+              <span class="profile-text">Profile</span>
+            </a>
+          </li>
+          
+          <li>
+            <form id="logout-form" action="/logout" method="GET" class="inline">
+              <button type="submit" class="nav-btn">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+              </button>
+            </form>
+          </li>
+        <% } else { %>
+          <% if (currentRoute !== '/register') { %>
+            <li><a href="/register" class="nav-link">Register</a></li>
+          <% } %>
+          <% if (currentRoute !== '/login') { %>
+            <li><a href="/login" class="nav-link">Login</a></li>
+          <% } %>
+        <% } %>
+      </ul>
+      
+    </div>
+  </nav>
+</body>
+</html>

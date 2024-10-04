@@ -1,0 +1,39 @@
+<!-- events/index.ejs -->
+
+<%- include('../layouts/header') %>
+<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/events.css">
+<!-- Heading and Button Container -->
+<div class="flex mb-6">
+  <h2 class="text-2xl font-bold">Upcoming Events</h2>
+  <% if (user.role === 'admin') { %>
+    <a href="/events/new" class="bg-blue-500 text-white px-4 py-2 rounded create-event-btn">
+      <i class="fas fa-plus-circle mr-2"></i> <!-- Add icon here -->
+      Create New Event
+    </a>
+  <% } %>
+</div>
+
+<!-- Event Cards Container -->
+<div class="container mx-auto p-4">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <% events.forEach(event => { %>
+      <div class="event-card bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-white p-4 rounded-lg shadow-lg transform transition-transform duration-500 hover:scale-105 hover:shadow-2xl">
+        <h3 class="text-xl font-semibold mb-2"><%= event.title %></h3>
+        <p class="text-gray-200 mb-2"><%= event.date.toDateString() %></p>
+        <p class="text-gray-100 mb-4"><%= event.description %></p>
+        <% if (user.role === 'admin') { %>
+          <div class="flex justify-between items-center mt-4">
+            <a href="/events/edit/<%= event._id %>" class="btn-edit">Edit</a>
+            <form action="/events/delete/<%= event._id %>" method="POST" class="inline">
+              <button type="submit" class="btn-delete">Delete</button>
+            </form>
+          </div>
+        <% } %>
+      </div>
+    <% }); %>
+  </div>
+</div>
+
+
+<%- include('../layouts/footer') %>

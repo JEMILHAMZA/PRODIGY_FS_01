@@ -1,0 +1,39 @@
+<%- include('./layouts/header') %>
+<link rel="stylesheet" href="/css/profile.css">
+
+<div class="profile-container">
+    <div class="back-button-container">
+        <a href="/events" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back to Events
+        </a>
+    </div>
+    <div class="profile-card">
+        <h1>Edit Profile</h1>
+
+        <!-- Display flash messages here -->
+        <% if (messages.error && messages.error.length > 0) { %>
+            <div class="alert alert-error">
+                <p><%= messages.error[0] %></p>
+            </div>
+        <% } %>
+
+        <form action="/profile" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" value="<%= user.username %>">
+            </div>
+            <div class="form-group">
+                <label for="password">New Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirmPassword">
+            </div>
+            <button type="submit" class="btn">Save Changes</button>
+        </form>
+    </div>
+</div>
+
+<%- include('./layouts/footer') %>
+
