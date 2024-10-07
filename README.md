@@ -1,8 +1,6 @@
 # PRODIGY_FS_01
 
-Here’s the **README** section as per your request:
 
----
 
 # Secure User Authentication System
 
