@@ -1,6 +1,3 @@
-# PRODIGY_FS_01
-
-
 
 # Secure User Authentication System
 
@@ -18,6 +15,4 @@ This project implements a secure authentication system that supports role-based 
 - **Admin Role**: Admins have full control, including the ability to create, read, and update events.
 - **User Role**: Regular users are limited to viewing events, with no permission to make changes.
 
----
 
-This version is clear, concise, and focuses on the key points of the project.
